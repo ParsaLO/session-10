@@ -81,7 +81,9 @@ input#menu:checked~section.menu-sand{
     }
 }
 
-
+h1{
+    padding: auto;
+}
 
 
 /* footer */
