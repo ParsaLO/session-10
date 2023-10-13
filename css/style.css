@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 0.625rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.493)),url(./../img/211227135008-02-the-batman-trailer.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+section.menu-sand{
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 300ms ;
+}
+.open{
+    font-size: 4rem;
+    color: white;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    animation: heartBeat 1000ms infinite;
+}
+.close{
+    font-size: 4rem;
+    color: red;
+}
+
+input#menu{
+    display: none;
+    
+}
+input#menu:checked~section.menu-sand{
+    /* display: none; */
+    transform: translateX(0px);
+
+}
+
+
+
+#about-us{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+
+@keyframes heartBeat {
+    0%{
+        transform: scale(1) rotateZ(0);   
+        color: white;
+    }
+    50%{
+        color: gray;
+        transform: scale(1.5) rotateZ(180deg);
+    }
+    100%{
+        color: bisque;
+        transform: scale(1) rotateZ(360deg);
+
+    }
+}
+
+
+
+
+/* footer */
